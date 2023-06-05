@@ -1,5 +1,5 @@
 .background-image {
-    background-image: url('Pics/IMG_20230605_164838.jpg');
+    
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -10,6 +10,7 @@
 }
 
 .content {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +38,7 @@ h1, p {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    background-color:#f5b644;
 }
 
 .fade-in {
@@ -49,31 +51,11 @@ h1, p {
 }
 
 .image-container img {
-    max-width: 100%;
+    width: 400px;
     height: auto;
-}
-
-.contact-container {
-    margin-top: 50px;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.contact-container.show {
-    opacity: 1;
-}
-
-.contact-container p {
-    margin-bottom: 10px;
 }
 
 body {
     margin: 0;
     padding: 0;
-}
-
-@media only screen and (max-width: 768px) {
-    .content {
-        padding: 10px;
-    }
 }
