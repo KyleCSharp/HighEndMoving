@@ -59,3 +59,56 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
+.contact-section {
+    opacity: 0;
+    transition: opacity 1s;
+    color: white;
+    text-align: right; 
+    padding-right: 200px; 
+    
+}
+
+.contact-section.fade-in {
+    opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      padding: 20px;
+      margin: 0; /* Add this line to remove body margin */
+    }
+  
+    .content {
+        margin-top: 50px;
+      text-align: center;
+      padding: 20px; /* Add this line to create space around content */
+    }
+  
+    .contact-section {
+      text-align: center;
+      padding-right: 0;
+      margin-top: 20px;
+      margin-bottom: 20px; /* Add this line to create space between containers */
+    }
+  
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px; /* Add this line to create space between containers */
+    }
+  
+    .image-container img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .fade-in {
+      transition: opacity 1s ease-in-out; /* Update the transition timing function for smoother fading */
+    }
+  }
+  
+  
+  
