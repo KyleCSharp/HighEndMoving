@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <link rel="icon" href="favicon\favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="Assets\style.css">
@@ -10,43 +9,68 @@
     <title>High End Moving</title>
 </head>
 <body>
-    <div class ="main-div">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS\script.js"></script>
+    <div class="main-div">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img class="logo" src="Pics\navbar.jpg" alt="Logo">
+            </div>
+            <div class="navbar-buttons">
+                <a href="#about" class="nav-button">About us</a>
+                <a href="#motto" class="nav-button">Motto</a>
+                <a href="#testimonials" class="nav-button">Testimonials</a>
+                <a href="#photos" class="nav-button">On the Job Photos</a>
+            </div>
+            <div class="contact-info">
+                <span class="contact-text">Contact Us</span>
+                <a href="tel:123-456-7890" class="phone-number">Phone: <strong>123-456-7890</strong></a>
+            </div>
+        </nav>
         <div class="background-image"></div>
-           
-        
-        <div class="content">
-            <div >
-                <h1>Welcome to High End Moving</h1>
+        <div class="content" id="about">
+            <div>
+                <h2>Welcome to High End Moving</h2>
                 <p>Your premier relocation specialists
                 
                     Welcome to High End Moving: Your Premier Relocation Specialists
     
-                    At High End Moving, we understand that moving can be an overwhelming task. That's why we're here to take the stress out of your relocation experience. As the leading moving company in the industry, we are dedicated to providing exceptional moving services tailored to meet your specific needs.
-                    
-                    Our mission is simple: to exceed your expectations and ensure your complete satisfaction. We pride ourselves on delivering high-quality, personalized services that go above and beyond the average moving company. From carefully packing your belongings to safely transporting them to your new destination, our meticulous attention to detail sets us apart.</p>
-                    
-                   
-                
+                    At High End Moving, we understand that moving can be an overwhelming task. That's why we're here to take the stress out of your relocation experience. As the leading moving company in the industry, we are dedicated to providing exceptional moving services tailored to meet your specific needs.</p>
             </div>
         </div>
-        <div class="contact-section">
-
-            <h2 class="fade-in">Contact Us</h2>
-            <h2 class = "fade-in">Owner</h2>
-            <h3 class="fade-in">Phone: (205) 427-1687</h3>
-            <h2 class = "fade-in">Moving Expert: Austin Godwin</h2>
-            <h3 class="fade-in">Phone: (205) 999-8095</h3>
-            <h3 class="fade-in">Email: amgodwin89@gmail.com</h3>
+        <div class="motto" id="motto">
+            <div class="company-motto fade-in">
+                <h2>Company Motto</h2>
+                <p>Your company motto goes here</p>
+            </div>
         </div>
-      
-        <div class="image-container">
+        <div class="testimonials" id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra feugiat quam vitae ultrices.
+                    Nullam aliquam consectetur tellus ut blandit. Fusce rutrum, ligula vitae suscipit aliquam, erat leo
+                    bibendum lacus, eu pellentesque elit odio a diam. Suspendisse potenti.</p>
+                <p class="author">- John Doe</p>
+            </div>
+
+            <div class="testimonial">
+                <p>Ut vel lectus luctus, cursus lorem quis, consectetur velit. Sed vitae ullamcorper elit, vitae suscipit urna.
+                    Maecenas dapibus lectus id libero volutpat vestibulum. Donec lobortis sem id tellus laoreet interdum.</p>
+                <p class="author">- Jane Smith</p>
+            </div>
+        </div>
+        <div class="image-container" id="photos">
             <img class="fade-in" src="Pics\moving.jpg" alt="Image 1">
             <img class="fade-in" src="Pics\fridge.jpg" alt="Image 2">
-        </div> 
-        
+        </div>
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://www.instagram.com/your-instagram" target="_blank"><img src="Pics/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/your-facebook" target="_blank"><img src="Pics/facebook.png" alt="Facebook"></a>
+            </div>
+        </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="JS\script.js"></script> <!-- Add this line if you have the fade-out script in a separate JavaScript file --></div>
-    
+
+  
 </body>
 </html>

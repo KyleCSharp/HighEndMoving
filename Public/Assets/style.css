@@ -1,6 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+.nav-button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #f5b644;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-html{
-    
+.nav-button:hover {
+  background-color: #e5942c;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.navbar {
+  background-color: #f5b644;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-right {
+  display: flex;
+  color: aliceblue;
+  text-align: right;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 10px;
+}
+.contact-text {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.phone-number {
+  font-size: 30px;
+  color: white;
 }
 
 .background-image {
@@ -17,23 +70,27 @@ html{
   
 
 .content {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: 'FancyFont', Arial, sans-serif;
+  opacity: 0;
+  width: 80%;
+  height: 80vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Palatino', 'URW Palladio L', serif;
+  background-color: white;
+  padding: 50px;
+  border-radius: 100px;
+ margin-top: 50px;
+ 
+  
 }
 
-h1, p {
-    opacity: 1;
-    transition: opacity 1s;
-    margin: 0;
-    font-family: 'FancyFont', Arial, sans-serif;
-}
+
 
 .fade-out {
     opacity: 0;
@@ -65,24 +122,104 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    font-family: 'Palatino', 'URW Palladio L', serif;
+    font-size: large;
+}
+
+.motto {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.company-motto {
+  opacity: 0;
+  transition: opacity 1s;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Palatino', 'URW Palladio L', serif;
+  background-color: white;
+  padding: 50px;
+  border-radius: 100px;
+
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+.testimonials {
+  background-color: white;
+  color: black;
+  padding: 50px;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+}
+
+.author {
+  font-style: italic;
+}
+
+.footer {
+  background-color: #f5b644;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer .social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer .social-links img:hover {
+  opacity: 0.7;
 }
 
 
-.contact-section {
-    opacity: 0;
-    transition: opacity 1s;
-    color: white;
-    text-align: right; 
-    padding-right: 200px; 
-    
-}
-
-.contact-section.fade-in {
-    opacity: 1;
-}
-@media only screen and (max-width: 600px) {
-  
-  body {
+@media only screen and (max-width: 600px) 
+{
+  .content
+  {
+   height: max-content;
+  }
+  .logo
+  {
+   max-width: 125px;
+   max-height: 125px;
+  }
+  body 
+  {
     background-color: black;
     margin: 0; 
     display: flex;
@@ -90,53 +227,45 @@ body {
     align-items: center;
     
   }
- p
+ 
+
+ .background-image
  {
-    background-color: white;
-    color: black;
-    border-radius: 10px; /* Adjust this value to control the roundness of the edges */
-  overflow: hidden;
- }
- .background-image{
     background-image: url("../Pics/highendmvingbackgroundphone.jpg");
     height: 75%; 
     width: 75%; 
     background-position: top left;
  }
+ 
   
-  
-    .content div{
-        padding-top: 50px;
-      margin-top: 50px;
-      text-align: center;
-      width: 80%;
-      
-    }
-  
-    .contact-section {
+    .motto 
+    {
       text-align: center;
       padding-right: 0;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-bottom: 20px; 
     }
   
-    .image-container {
+    .image-container 
+    {
       flex-direction: column;
       align-items: center;
       margin-top: 20px;
       margin-bottom: 50px; 
     }
   
-    .image-container img {
+    .image-container img 
+    {
       width: 100%;
       max-width: 300px;
       height: auto;
     }
   
-    .fade-in {
+    .fade-in 
+    {
       transition: opacity 2s ease-in-out; 
     }
   }
   
   
-  
+ 
