@@ -1,3 +1,6 @@
+
+
+
 .background-image {
     
     background-repeat: no-repeat;
@@ -17,7 +20,6 @@
     align-items: center;
     color: white;
     text-align: center;
-    padding: 20px;
     box-sizing: border-box;
     font-family: 'FancyFont', Arial, sans-serif;
 }
@@ -58,6 +60,7 @@ h1, p {
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 
@@ -74,29 +77,35 @@ body {
     opacity: 1;
 }
 @media only screen and (max-width: 600px) {
-    body {
-      padding: 20px;
-      margin: 0; /* Add this line to remove body margin */
-    }
   
-    .content {
-        margin-top: 50px;
+  body {
+    background-color: black;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+    .content div{
+      margin-top: 50px;
       text-align: center;
-      padding: 20px; /* Add this line to create space around content */
+      width: 80%;
+      
     }
   
     .contact-section {
       text-align: center;
       padding-right: 0;
       margin-top: 20px;
-      margin-bottom: 20px; /* Add this line to create space between containers */
+      margin-bottom: 20px; 
     }
   
     .image-container {
       flex-direction: column;
       align-items: center;
       margin-top: 20px;
-      margin-bottom: 20px; /* Add this line to create space between containers */
+      margin-bottom: 50px; 
     }
   
     .image-container img {
@@ -106,7 +115,7 @@ body {
     }
   
     .fade-in {
-      transition: opacity 1s ease-in-out; /* Update the transition timing function for smoother fading */
+      transition: opacity 2s ease-in-out; 
     }
   }
   
