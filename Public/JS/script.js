@@ -1,7 +1,7 @@
 $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
-    var fadeStart = 200; // Adjust this value to determine when the fade-out starts
-    var fadeUntil = 500; // Adjust this value to determine when the fade-out completes
+    var fadeStart = 100; // Adjust this value to determine when the fade-out starts
+    var fadeUntil = 400; // Adjust this value to determine when the fade-out completes
 
     if (scrollTop <= fadeStart) {
         $('h1, p').removeClass('fade-out');
