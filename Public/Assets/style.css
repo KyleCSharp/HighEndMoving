@@ -209,6 +209,13 @@ body {
 
 @media only screen and (max-width: 600px) 
 {
+  .navbar-right{
+    text-align: center;
+    align-items: center;
+  }
+  .phone-number{
+    text-align: center;
+  }
   .content
   {
    height: max-content;
