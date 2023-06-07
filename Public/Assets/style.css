@@ -46,6 +46,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin-left: 10px;
+color: white;
 }
 .contact-text {
   font-weight: bold;
