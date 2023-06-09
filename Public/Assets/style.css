@@ -121,6 +121,7 @@ html {
 .image-container img {
     width: 400px;
     height: auto;
+    padding-inline: 20px;
 }
 
 body {
@@ -275,6 +276,7 @@ body {
       align-items: center;
       margin-top: 20px;
       margin-bottom: 50px; 
+      
     }
   
     .image-container img 
@@ -282,6 +284,7 @@ body {
       width: 100%;
       max-width: 300px;
       height: auto;
+      padding: 20px;
     }
   
     .fade-in 
