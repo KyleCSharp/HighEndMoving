@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 .nav-button {
   display: inline-block;
@@ -78,7 +79,7 @@ html {
 .content {
   opacity: 0;
   width: 80%;
-  
+  height: 80vh;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -144,7 +145,7 @@ body {
   opacity: 0;
   transition: opacity 1s;
   width: 50%;
-  height: 35vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,7 +245,26 @@ body {
 
 @media only screen and (max-width: 800px) 
 {
+  .main-div{
+    width: 100%;
+  }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  .contact-text {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    
+  }
   
+  .phone-number {
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    
+  }
   
   
   .phone-number{
