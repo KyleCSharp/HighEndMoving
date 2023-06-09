@@ -25,5 +25,47 @@
     $(window).trigger('scroll');
   });
   
-  
-  
+/*   ___________________________________________________ */
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.image-container img');
+
+  function openFullscreen(imageSrc) {
+    const fullscreenImage = document.createElement('img');
+    fullscreenImage.classList.add('fullscreen-image');
+    fullscreenImage.src = imageSrc;
+
+    document.body.appendChild(fullscreenImage);
+
+    fullscreenImage.addEventListener('click', closeFullscreen);
+    document.addEventListener('keydown', handleKeyDown);
+  }
+
+  function closeFullscreen() {
+    const fullscreenImage = document.querySelector('.fullscreen-image');
+    fullscreenImage.removeEventListener('click', closeFullscreen);
+    document.removeEventListener('keydown', handleKeyDown);
+
+    document.body.removeChild(fullscreenImage);
+  }
+
+  function handleKeyDown(event) {
+    if (event.key === 'Escape') {
+      closeFullscreen();
+    }
+  }
+
+  images.forEach((image) => {
+    image.addEventListener('click', () => {
+      openFullscreen(image.src);
+    });
+  });
+
+  // Fade in images
+  images.forEach((image) => {
+    image.addEventListener('load', () => {
+      image.classList.add('loaded');
+    });
+  });
+});
