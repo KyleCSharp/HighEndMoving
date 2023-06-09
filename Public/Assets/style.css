@@ -29,6 +29,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+ 
 }
 
 .navbar-left {
@@ -243,7 +244,7 @@ body {
   max-height: 70%;
 }
 
-@media only screen and (max-width: 800px) 
+@media only screen and (max-width: 1200px) 
 {
  
   
