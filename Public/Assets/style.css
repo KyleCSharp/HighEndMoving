@@ -36,7 +36,7 @@ html {
 
 .navbar-right {
   display: flex;
-  color: aliceblue;
+  color: white;
   text-align: center;
   align-items: center;
 }
@@ -59,6 +59,7 @@ html {
   font-size: 30px;
   color: white;
   margin: 0;
+  
 }
 
 .background-image {
@@ -225,14 +226,12 @@ body {
 @media only screen and (max-width: 800px) 
 {
   
-  .navbar-right{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
+  
+  
   .phone-number{
     text-align: center;
     margin: 0;
+    text-decoration: none;
   }
   .content
   {
