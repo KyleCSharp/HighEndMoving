@@ -78,7 +78,7 @@ html {
 .content {
   opacity: 0;
   width: 80%;
-  height: 80vh;
+  
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -144,7 +144,7 @@ body {
   opacity: 0;
   transition: opacity 1s;
   width: 50%;
-  height: 40vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
