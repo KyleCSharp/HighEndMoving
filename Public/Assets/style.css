@@ -257,25 +257,30 @@ body {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .form-div input[type="email"],
-.form-div input[type="text"] {
+.form-div input[type="text"],
+.form-div textarea {
   display: block;
   width: 100%;
   padding: 5px;
   margin-bottom: 15px;
   border: 1px solid #000000;
   border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .form-div input[type="email"]::placeholder,
-.form-div input[type="text"]::placeholder {
+.form-div input[type="text"]::placeholder,
+.form-div textarea::placeholder {
   color: #000000;
 }
 
 .form-div input[type="email"]:focus,
-.form-div input[type="text"]:focus {
+.form-div input[type="text"]:focus,
+.form-div textarea:focus {
   outline: none;
   border-color: #e5942c;
 }
@@ -290,11 +295,13 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .form-div button:hover {
   background-color: #e5942c;
 }
+
 @media only screen and (max-width: 1200px) 
 {
  
