@@ -265,13 +265,13 @@ body {
   width: 100%;
   padding: 5px;
   margin-bottom: 15px;
-  border: 1px solid #f5b644;
+  border: 1px solid #000000;
   border-radius: 5px;
 }
 
 .form-div input[type="email"]::placeholder,
 .form-div input[type="text"]::placeholder {
-  color: #f5b644;
+  color: #000000;
 }
 
 .form-div input[type="email"]:focus,
