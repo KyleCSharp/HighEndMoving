@@ -114,3 +114,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === "hidden") {
+    // Change the title to the custom message
+    document.title = "High End Moving, get a quote";
+  } else {
+    // When the user returns to the page, restore the original title
+    document.title = "High End Moving";
+  }
+});
