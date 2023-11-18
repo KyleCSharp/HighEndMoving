@@ -1,35 +1,5 @@
-
-  $(document).ready(function() {
-    $(window).scroll(function() {
-      var scrollTop = $(this).scrollTop();
-      var windowHeight = $(this).height();
-  
-      $('.content, .company-motto, .testimonials, .fade-in').each(function() {
-        var elementOffset = $(this).offset().top;
-        var distanceFromTop = elementOffset - scrollTop;
-        var fadeStart = -windowHeight * 0.4; // Adjust this value to control the delay
-        var fadeEnd = windowHeight * 0.6; // Adjust this value to control when the content starts fading out
-  
-        if (distanceFromTop > fadeStart && distanceFromTop < fadeEnd) {
-          var opacity = 1;
-          $(this).css('opacity', opacity);
-        } else if (distanceFromTop <= fadeStart) {
-          $(this).css('opacity', 0);
-        } else {
-          var opacity = 1 - (distanceFromTop - fadeEnd) / (windowHeight * 0.25); // Adjust this value to control the fade-out speed
-          $(this).css('opacity', opacity);
-        }
-      });
-    });
-  
-    $(window).trigger('scroll');
-  });
-  
-/*   ___________________________________________________ */
-
-
 document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.image-container img');
+  const images = document.querySelectorAll('.Images-div img');
   let currentImageIndex = 0;
   let fullscreenMode = false;
 
@@ -114,12 +84,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-document.addEventListener("visibilitychange", function() {
-  if (document.visibilityState === "hidden") {
-    // Change the title to the custom message
-    document.title = "High End Moving, get a quote";
-  } else {
-    // When the user returns to the page, restore the original title
-    document.title = "High End Moving";
+
+document.addEventListener("click", (event) => {
+  const contactButton = document.querySelector(".contact-button"); 
+  const popupOverlay = document.getElementById("popupOverlay");
+  const closeButton = document.getElementById("closeButton");
+
+  if (event.target === contactButton) {
+    popupOverlay.classList.add("show-popup"); 
   }
+
+  if (event.target === closeButton) {
+    popupOverlay.classList.remove("show-popup"); 
+  }
+});
+function submitForm() {
+  // Show the spinner
+  document.getElementById('spinner').style.display = 'block';
+  
+  
+  // Disable the submit button to prevent multiple clicks during form submission
+  document.getElementById('submitBtn').disabled = true;
+  
+  // Submit the form programmatically
+  document.getElementById('myForm').submit();
+}
+document.addEventListener("visibilitychange", function() {
+if (document.visibilityState === "hidden") {
+  // Change the title to the custom message
+  document.title = "High End Moving, Get a quote";
+} else {
+  // When the user returns to the page, restore the original title
+  document.title = "High End Moving";
+}
 });

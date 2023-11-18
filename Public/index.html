@@ -2,91 +2,129 @@
 <html lang="en">
 <head>
     <link rel="icon" href="favicon\favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="Assets\style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="JS\script.js"></script>
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <title>High End Moving</title>
-   
+    <div id="contactContainer" style="display: none;">
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <!-- Your contact form goes here -->
+            <form id="contact-form">
+                <!-- Your form fields (e.g., name, email, message) -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img class="logo" src="favicon\favicon.jpg" alt="Logo">
+        </div>
+        <div class="navbar-buttons">
+            
+            <a href="#location-div" class="nav-button">Location</a>
+            <a href="#" class="nav-button contact-button">Contact Us</a>
+            <a href="#Images" class="nav-button">Images</a>
+            <!-- <a href="#reviews" class="nav-button">Reviews</a> -->
+            
+            
+         
+            
+            <a href="#links" class="nav-button">Links</a>
+        </div>
+    </nav>
+    <!-- Popup Overlay and Content -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <span class="close-button" id="closeButton">&times;</span>
+      <h2>Contact Form</h2>
+      <!-- Your contact form elements go here -->
+      <form id="myForm" action="https://formsubmit.co/highendmovers@outlook.com" method="POST">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="number" placeholder="Number" required>
+        <textarea name="message" placeholder="Write message here" required></textarea>
+        <input type="hidden" name="_autoresponse" value="Thank you for reaching out, We will get back with you ASAP.">
+        <input type="hidden" name="_next" value="https://highend-moving.com/pages/Thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="button" id="submitBtn" onclick="submitForm()">Send</button>
+    </form>
     
-    <div class="main-div">
-        <nav class="navbar">
-            <div class="navbar-left">
-                <img class="logo" src="Pics\navbar.jpg" alt="Logo">
-            </div>
-            <div class="navbar-buttons">
-                <a href="#about" class="nav-button">About us</a>
-                <a href="#motto" class="nav-button">Motto</a>
-                <a href="#testimonials" class="nav-button">Testimonials</a>
-                <a href="#photos" class="nav-button">On the Job Photos</a>
-                <a href="#links" class="nav-button">Links</a>
-            </div>
-            <div class="contact-info">
-                <div class="contact-text">Contact</div>
-                <div class="contact-text">Us</div>
-                <a href="tel:123-456-7890" class="phone-number">Phone: <strong>(205) 984-9280</strong></a>
-                <a href = "mailto:highendmovers@outlook.com" class ="nav-button">Send Email</a>
-            </div>
-        </nav>
-        <div class="background-image"></div>
-        <div class="content" id="about">
-            <div>
-                <h2>Welcome to High End Moving</h2>
-                <p>Discover our professional moving company in Birmingham, AL, specializing in Antiques and Fine Furniture. Whether you're a residential or commercial client, an interior designer, or in need of artwork/furniture delivery, we have you covered. Our experienced, polite, and dedicated movers go above and beyond to ensure a superior experience with impeccable execution. Call us now for a free estimate and let us serve you with excellence.</p>
-            </div>
-        </div>
-        <div class="motto" id="motto">
-            <div class="company-motto fade-in">
-                <h2>Our Motto</h2>
-                <p>"Unrelenting Effort. Premium Quality"</p>
-            </div>
-        </div>
-        <div class="testimonials" id="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <p>High End Moving did everything I asked. Absolutely no problems. He took care of everything: showed up on time, they’re known for being excellent at antiques…I had at least one. High End will be moving my stuff again…totally excellent service. Thank you Austin Godwin!</p>
-                <p class="author">- Robert Carlson</p>
-            </div>
-
-            <div class="testimonial">
-                <p>High End Moving did an incredible job moving my house out last week! I’m so pleased with their company!</p>
-                <p class="author">- Leslie Elliott McCall</p>
-            </div>
-        </div>
-        <h2 style="text-align: center; color: white;">Receive a quote.</h2>
-        <div class = "form-div">
-            <form action="https://formsubmit.co/highendmovers@outlook.com" method="POST">
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="name"placeholder="Name" required>
-                <input type="text" name="number" placeholder="Number"required>
-                <textarea name="message" placeholder="Write message here" required></textarea>
-
-                <button type="submit">Send</button>
-           </form>
-
-        </div>
-        <div class="image-container" id="photos">
-            <img class="fade-in" src="Pics\moving.jpg" alt="Image 1">
-            <img class="fade-in" src="Pics\storageunit.jpeg" alt="Image 2">
-            <img class="fade-in" src="Pics\piano.jpeg" alt="Image 3">
-            <img class="fade-in" src="Pics\truckmoving.jpeg" alt="Image 4">
-            <img class="fade-in" src="Pics\moving2.jpg" alt="Image 5">
-            <img class="fade-in" src="Pics\smilewithtruch.jpg" alt="Image 6">
-            <img class="fade-in" src="Pics\moving3.jpg" alt="Image 7">
-            <img class="fade-in" src="Pics\moving4.jpg" alt="Image 8">
-        </div>
-        <footer class="footer">
-            <div class="social-links" id = "links">
-                <a href="https://www.facebook.com/people/High-End-Moving/100092832642822/" target="_blank"><img src="Pics\567-5671805_white-circle-facebook-logo-png-download-facebook-transparent-removebg-preview.png" alt="Facebook"></a>
-            </div>
-        </footer>
+    <div class="spinner" id="spinner"></div>
+    
     </div>
+  </div>
+    <img src="Pics\Background-Image.png" alt="Background Image" id="background-image">
+    <div class="headerimages-div">
+        <img src="Pics\moving.jpg" alt="header">
+        <img src="Pics\storageunit.jpeg" alt="header">
+        <img src="Pics\moving2.jpg" alt="header">
+        <div class="centered-image">
+            <img src="Pics\Screenshot 2023-11-18 135813.png" alt="Centered Image"  class="specific-image">
+        </div>
+    </div>
+    <div class="about-us-div">
+        <h1>Welcome to High End Moving</h1>
+        <p>
+            Discover our professional moving company in Birmingham, AL, specializing in Antiques and Fine Furniture. Whether you're a residential or commercial client, an interior designer, or in need of artwork/furniture delivery, we have you covered. Our experienced, polite, and dedicated movers go above and beyond to ensure a superior experience with impeccable execution. Call us now for a free estimate and let us serve you with excellence.</p>
+    </div>
+    <div class="motto">
+        <h1>Our Motto</h1>
+        <p>"Unrelenting Effort. Premium Quality"</p>
+    </div>
+    
+    <div class="location-div" id="location-div">
+        <h1>Location</h1>
+        <div class ="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.806372928877!2d-86.72625699999999!3d33.4543508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8889176ddf6a3545%3A0x6b1c1b3fd620ec90!2s4141%20White%20Oak%20Dr%2C%20Vestavia%20Hills%2C%20AL%2035243!5e0!3m2!1sen!2sus!4v1700347375559!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="address">
+            <img src="Pics\arrow.png" alt="Phone Icon">
+            <a href="https://maps.app.goo.gl/uZuveTnMsD2KJV3L9" target="_blank">4141 White Oak Dr, Vestavia Hills, AL 35243</a>
+        </div>
+        <div class="phone">
+            <img src="Pics\phone.png" alt="Address Icon">
+            <a href="tel:2059998095" class="phone-number"><strong>Phone: </strong><strong>(205) 999-8095</strong></a>
+        </div>
+    </div>
+    <div id="Images"><h1>Images</h1></div>
+    <div class="Images-div">
+        
+       
+        <img src="Pics\moving3.jpg">
+        <img src="Pics\moving4.jpg">
+        <img src="Pics\piano.jpeg">
+        <img src="Pics\smilewithtruch.jpg">
+        <img src="Pics\truckmoving.jpeg">
+        <img src="Pics\402944271_230029353434818_3349961319669865037_n.jpg">
+        <img src="Pics\401080130_10227722755306665_2137886811973796792_n.jpg">
+        <img src="Pics\373327533_185612127876541_7557161057004200453_n.jpg">
+        <img src="Pics\370763428_179291181841969_7297484406952033363_n.jpg">
+      </div>
+      
+      
 
+
+    <footer class="footer">
+        <div class="social-links" id="links">
+            <a href="https://www.facebook.com/people/High-End-Moving/100092832642822/" target="_blank">
+                <img src="Pics\567-5671805_white-circle-facebook-logo-png-download-facebook-transparent-removebg-preview.png" alt="Facebook">
+            </a>
+            <a href="mailto:Highendmovers@outlook.com"><img src="Pics\png-email-removebg-preview.png" alt="Facebook"></a>
+        </div>
+    </footer>
+    
+    <script src="JS/script.js"></script>
 </body>
 </html>

@@ -1,421 +1,521 @@
-html {
+html{
   scroll-behavior: smooth;
-  
-}
-.nav-button {
-  display: inline-block;
-  padding: 10px 15px;
-  margin: 0 5px;
-  background-color: #f5b644;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  
-}
-
-.nav-button:hover {
-  background-color: #e5942c;
-}
-
-.logo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-.navbar {
-  background-color: #f5b644;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
- 
-}
-
-.navbar-left {
-  display: flex;
-}
-
-.navbar-right {
-  display: flex;
-  color: white;
-  text-align: center;
-  align-items: center;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 10px;
-
-}
-.contact-text {
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  
-}
-
-.phone-number {
-  font-size: 30px;
-  color: white;
-  margin: 0;
-  
-}
-
-.background-image {
-    background-image: url("../Pics/highendmvingbackground.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top left;
-    height: 30vh; 
-    width: 30%; 
-    position: fixed;
-    z-index: -1;
-    background-color: black;
-  }
-  
-
-.content {
-  opacity: 0;
-  width: 80%;
-  
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  box-sizing: border-box;
-  font-family: 'Palatino', 'URW Palladio L', serif;
-  background-color: white;
-  padding: 50px;
-  border-radius: 100px;
- margin-top: 50px;
- 
-  
-}
-
-.fade-out {
-    opacity: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    font-family: 'Palatino', 'URW Palladio L', serif;
-    font-size: large;
-    
-}
-
-.motto {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-}
-
-.company-motto {
-  opacity: 0;
-  transition: opacity 1s;
-  width: 50%;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
   text-align: center;
-  box-sizing: border-box;
-  font-family: 'Palatino', 'URW Palladio L', serif;
-  background-color: white;
-  padding: 50px;
-  border-radius: 100px;
-
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.fade-in.show {
-  opacity: 1;
-}
-.testimonials {
-  background-color: white;
-  color: black;
-  padding: 50px;
-  border-radius: 100px;
-  margin-top: 20px;
-}
-
-.testimonial {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.testimonial p {
-  margin-bottom: 10px;
-}
-
-.author {
-  font-style: italic;
-}
-
-.footer {
-  background-color: #f5b644;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
+  overflow-x: hidden;
+  background-color: #7a7a7a;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard', 'Chalkduster', 'Arial', sans-serif;
   
 }
 
-.footer .social-links {
-  display: flex;
-  justify-content: center;
-}
-
-.footer .social-links a {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.footer .social-links img {
-  width: 30px;
-  height: 30px;
-}
-
-.footer .social-links img:hover {
-  opacity: 0.7;
-}
-
-.content,
-.company-motto,
-.testimonials,
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.image-container {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-gap: 10px;
-  justify-items: center;
-  max-width: 100%; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container */
-  background-color:#f5b644;
-}
-
-/* Center the last two images when there are less than 8 images */
-.image-container.center-last-two {
-  justify-content: space-between;
-}
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.fade-in.show {
-    opacity: 1;
-}
-
-.image-container img {
-    width: 400px;
-    height: auto;
-    padding-inline: 20px;
-   
-    padding-bottom: 20px;
-}
-.fullscreen-image {
+#background-image {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9999;
-  background-color: black;
+  object-fit: cover;
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+ 
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    margin-left: 20px;
+    border-radius: 30%;
+  
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color:black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+.nav-button:hover {
+    opacity: 0.8;
+}
+
+.headerimages-div {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.headerimages-div img {
+    flex: 1;
+    
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;
+    
+}
+
+.centered-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.fullscreen-image img {
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain;
-  cursor: pointer;
-}
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 60px;
-  color: white;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.3s;
-}
+.centered-image img {
+  width: 400px; /* Set a fixed width */
+  height: 400px; /* Set a fixed height */
+  border-radius: 50%; /* Make it a perfect circle */
+  object-fit: fill;
 
-.arrow:hover {
-  opacity: 1;
 }
-
-.prev-arrow {
-  left: 20px;
-}
-
-.next-arrow {
-  right: 20px;
-}
-.exit-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.3s;
-}
-
-.exit-button:hover {
-  opacity: 1;
-}
-
-/* Existing CSS styles... */
-
-.form-div {
-  max-width: 500px;
-  margin: 20px auto 20px;
-  padding: 40px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; 
-}
-
-.form-div input[type="email"],
-.form-div input[type="text"],
-.form-div textarea {
-  display: block;
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  box-sizing: border-box; 
-}
-
-.form-div input[type="email"]::placeholder,
-.form-div input[type="text"]::placeholder,
-.form-div textarea::placeholder {
-  color: #000000;
-}
-
-.form-div input[type="email"]:focus,
-.form-div input[type="text"]:focus,
-.form-div textarea:focus {
-  outline: none;
-  border-color: #e5942c;
-}
-
-.form-div button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #f5b644;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  box-sizing: border-box; 
-}
-
-.form-div button:hover {
-  background-color: #e5942c;
-}
-
-@media only screen and (max-width: 1200px) 
-{
- 
-  
-  
-  .contact-text {
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    
-  }
-  
-  .phone-number {
-    font-size: 25px;
-    color: white;
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  
-  .phone-number{
-    text-align: center;
-    margin: 0;
-    text-decoration: none;
-  }
-  .content
-  {
-   height: max-content;
-  }
-  .logo
-  {
-   max-width: 125px;
-   max-height: 125px;
-  }
-  body 
-  {
+.about-us-div {
     background-color: black;
-    margin: 0; 
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
+    border-radius: 10px;
+}
+
+.about-us-div h1 {
+    font-size: 30px;
+}
+
+.about-us-div p {
+    font-size: 18px;
+}
+.motto {
+  background-color: black;
+  color: white;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+  border-radius: 10px;
+}
+
+.motto h1 {
+  font-size: 30px;
+}
+
+.motto p {
+  font-size: 18px;
+}
+.location-div {
+    background-color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
+    border-radius: 10px;
+    
+}
+
+.location-div h1 {
+    margin-bottom: 20px;
+}
+
+.location-div .address,
+.location-div .phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.location-div img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.location-div p {
+    margin: 0;
+}
+.Images-div {
+  
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-gap: 20px; /* Adjust the spacing between images */
+  justify-items: center;
+  margin: 0 20px; /* Add margin on the left and right */
+  
+}
+
+.Images-div img {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Adjust the maximum width of each image */
+  padding: 10px;
+  grid-row: span 3; /* Stagger the images by making them span two rows */
+  
+}
+  .fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .fullscreen-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .arrow:hover {
+    opacity: 1;
+  }
+  
+  .prev-arrow {
+    left: 20px;
+  }
+  
+  .next-arrow {
+    right: 20px;
+  }
+  .exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .exit-button:hover {
+    opacity: 1;
+  }
+  
+ 
+.footer {
+    background-color: #fbb701;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer .social-links img:hover {
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 1000px) {
+  .centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-image img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    border-radius: 50%; /* Make it a perfect circle */
+    object-fit: fill;
+}
+  .logo {
+    margin-left: 0; /* Center the logo on smaller screens */
+    padding-top: 5px;
+  }
+    .navbar {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+   
+  }
+  
+  .navbar-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+   
+  }
+  
+  .nav-button {
+    margin: 5px;
     
   }
- 
-
- .background-image
- {
-    background-image: url("../Pics/highendmvingbackgroundphone.jpg");
-    height: 75%; 
-    width: 75%; 
-    background-position: top left;
- }
- 
   
-    .motto 
-    {
-      text-align: center;
-      padding-right: 0;
-      margin-top: 10px;
-      margin-bottom: 20px; 
-    }
-  
-    .image-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .image-container img {
-      width: calc(35% - 20px); /* Each image will take up one-third of the container width */
-      margin: 10px;
-    }
-    .fade-in 
-    {
-      transition: opacity 2s ease-in-out; 
-    }
+  .Images-div {
+    flex-wrap: wrap;
+    padding: 20px;
+    
   }
+  .location-div {
+    background-color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+.about-us-div {
+  background-color: black;
+  color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+.motto {
+  background-color: black;
+  color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+}
+@media only screen and (max-width: 1200px) {
+  .logo {
+    margin-left: 0; /* Center the logo on smaller screens */
+    padding-top: 5px;
+  }
+  .headerimages-div img:not(.specific-image):not(:nth-child(2)) {
+    display: none; /* Hide all images except the specific one and the second one */
+  }
+
+  .headerimages-div img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+  }
+
+  .centered-image img,
+  .specific-image {
+    max-width: 100%; /* Set a max width to maintain aspect ratio */
+    border-radius: 100%;
+  }
+}
+/* Style for the popup */
+.contact-button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  transition: opacity 0.3s;
+}
+.contact-button:hover {
+  opacity: 0.8;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+  color: rgb(252, 252, 252);
+  animation: fadeInOut 0.5s ease; /* Use the fadeInOut animation for smooth effect */
+  opacity: 0;
+}
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#fbb701;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.popup-overlay.show-popup {
+  display: block;
+  opacity: 1;
+}
+
+
+.message-container {
   
+  margin-top: 10px;
+}
+
+
+textarea {
   
- 
+  width: 100%;
+  height: 150px;
+  
+}
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Additional styles for the thank you page */
+.thank-you-container {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 600px;
+  background-color: #fbb701;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional styles for the back-to-home button */
+.back-home-button {
+  display: block;
+  color: white;
+  margin: 20px auto;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.back-home-button:hover {
+  background-color: #555;
+}
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #fbb701;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none; /* Initially hide the spinner */
+  background-color: #333;
+  color: #fff; /* Color for the spinner icon (if applicable) */
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.map iframe {
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 200px;
+  border: 0; /* Removes the border around the iframe */
+
+ /* Adjust the map size for phones */
+ @media (max-width: 767px) {
+  width: 100%; /* Full width for phones */
+  height: auto; /* Height will adjust automatically based on aspect ratio */
+}
+}
+img {
+  border-radius: 20px; /* Adjust the value as needed */
+}
