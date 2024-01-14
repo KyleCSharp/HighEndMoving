@@ -133,7 +133,7 @@ function createSlideshow() {
 
   imageFilenames.forEach((filename, index) => {
     const img = document.createElement('img');
-    img.src = `/Public/Pics/Vestavia-Hills/${filename}`;
+    img.src = `Public/Pics/Vestavia-Hills/${filename}`;
     img.alt = 'Vestavia Hills Image';
     slideshowContainer.appendChild(img);
   });
