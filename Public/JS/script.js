@@ -112,9 +112,55 @@ function submitForm() {
 document.addEventListener("visibilitychange", function() {
 if (document.visibilityState === "hidden") {
   // Change the title to the custom message
-  document.title = "High End Moving, Get a quote";
+  document.title = "High End Moving, Get a quote today!";
 } else {
   // When the user returns to the page, restore the original title
-  document.title = "High End Moving";
+  document.title = "High End Moving - Your Trusted Local Moving Service in Vestavia Hills, AL";
 }
 });
+const imageFilenames = [
+  'Sibyl-Temple-1024x823.jpg',
+  'f_21363373.jpg',
+  '26354e46e6271f430523cb6d9c219fa1l-f4214477048r.jpg',
+  'ZooExpand-5.jpg',
+  'unnamed.jpg',
+  'MossRock13.jpg',
+  'maxresdefault.jpg'
+]; // Add more filenames as needed
+
+function createSlideshow() {
+  const slideshowContainer = document.getElementById('slideshow');
+
+  imageFilenames.forEach((filename, index) => {
+    const img = document.createElement('img');
+    img.src = `../Public/Pics/Vestavia-Hills/${filename}`;
+    img.alt = 'Vestavia Hills Image';
+    slideshowContainer.appendChild(img);
+  });
+
+  let currentIndex = 0;
+  const images = document.querySelectorAll('#slideshow img');
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextImage() {
+    showImage(currentIndex);
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  setInterval(nextImage, 4000);
+
+  showImage(currentIndex);
+}
+
+window.onload = createSlideshow;
+
+
+
+
+
+
