@@ -119,7 +119,12 @@ ul{
   text-align: center;
   margin: 100px;
   border-radius: 10px;
+  
 }
+.differences-div p{
+  font-size: 18px;
+}
+
 .founders-div{
   background-color: black;
   color: white;
@@ -146,9 +151,6 @@ ul{
     border-radius: 10px;
 }
 
-.about-us-div h1 {
-    font-size: 30px;
-}
 
 .about-us-div p {
     font-size: 18px;
@@ -205,6 +207,7 @@ ul{
 
 .location-div p {
     margin: 0;
+   
 }
 .Images-div {
   
@@ -387,7 +390,7 @@ letter-spacing: 5px; /* Adjust the letter spacing on smaller screens */
 .differences-div
 {
   background-color: white;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -412,7 +415,6 @@ letter-spacing: 5px; /* Adjust the letter spacing on smaller screens */
 .about-us-div {
   background-color: black;
   color: white;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
