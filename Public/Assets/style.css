@@ -403,7 +403,7 @@ letter-spacing: 5px; /* Adjust the letter spacing on smaller screens */
 {
   background-color: black;
   color: white;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -584,11 +584,11 @@ textarea {
   top: 0;
   left: 0;
   width: 1000px;
-  height: 200px;
+  height: 300px;
   border: 0; /* Removes the border around the iframe */
 
  /* Adjust the map size for phones */
- @media (max-width: 767px) {
+ @media (max-width: 1150px) {
   width: 100%; /* Full width for phones */
   height: auto; /* Height will adjust automatically based on aspect ratio */
 }
