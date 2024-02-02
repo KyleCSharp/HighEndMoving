@@ -662,8 +662,8 @@ img {
 }
 
 #slideshow img {
-  width: 1000px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   opacity: 0;
   top: 0;
   left: 0;
