@@ -222,7 +222,7 @@ ul{
 .Images-div img {
   width: 100%;
   height: auto;
-  max-width: 300px; /* Adjust the maximum width of each image */
+  max-width: 450px; /* Adjust the maximum width of each image */
   padding: 10px;
   grid-row: span 3; /* Stagger the images by making them span two rows */
   
