@@ -119,8 +119,13 @@ if (document.visibilityState === "hidden") {
 }
 });
 const imageFilenames = [
-  'NEW1.jpeg',
-  'NEW2.jpeg'
+  'Sibyl-Temple-1024x823.jpg',
+  'f_21363373.jpg',
+  '26354e46e6271f430523cb6d9c219fa1l-f4214477048r.jpg',
+  'ZooExpand-5.jpg',
+  'unnamed.jpg',
+  'MossRock13.jpg',
+  'maxresdefault.jpg'
 ]; // Add more filenames as needed
 
 function createSlideshow() {
@@ -128,7 +133,7 @@ function createSlideshow() {
 
   imageFilenames.forEach((filename, index) => {
     const img = document.createElement('img');
-    img.src = `/Pics${filename}`;
+    img.src = `/Pics/${filename}`;
     img.alt = 'Vestavia Hills Image';
     slideshowContainer.appendChild(img);
   });
