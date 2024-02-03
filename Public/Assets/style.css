@@ -411,6 +411,7 @@ letter-spacing: 5px; /* Adjust the letter spacing on smaller screens */
   text-align: center;
   margin: 20px;
   border-radius: 10px;
+  padding-bottom:10px;
 }
 .about-us-div {
   background-color: black;
