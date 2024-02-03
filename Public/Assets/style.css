@@ -692,7 +692,35 @@ img {
   left: -9999px;
 }
 
+.iframe {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 0 auto;
+}
 
+.iframe iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 768px) {
+  .iframe {
+      max-width: 800px; /* Set your desired maximum width for desktop */
+  }
+}
+
+/* Phone Styles */
+@media only screen and (max-width: 767px) {
+  .iframe {
+      max-width: 100%; /* Full width for phones */
+  }
+}
 
 
 
