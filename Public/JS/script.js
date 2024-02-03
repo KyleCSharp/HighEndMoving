@@ -123,7 +123,18 @@ const imageFilenames = [
   'NEW2.jpeg',
   'NEW3.jpeg',
   'NEW4.jpeg',
-  'NEW5.jpeg'
+  'NEW5.jpeg',
+  '370763428_179291181841969_7297484406952033363_n.jpg',
+  '373327533_185612127876541_7557161057004200453_n.jpg',
+  'image0.jpeg',
+  'image1.jpeg',
+  'image3.jpeg',
+  'moving.jpg',
+  'moving2.jpg',
+  'moving3.jpg',
+  'moving4.jpg',
+  'smilewithtruch.jpg',
+  'truckmoving.jpeg'
 ]; // Add more filenames as needed
 
 function createSlideshow() {
