@@ -118,8 +118,17 @@ if (document.visibilityState === "hidden") {
   document.title = "High End Moving - Your Trusted Local Moving Service in Vestavia Hills, AL";
 }
 });
-const imageFilenames1 = [
-  
+const imageFilenames = [
+  'NEW1.jpeg',
+  'NEW2.jpeg',
+  'NEW3.jpeg',
+  'NEW4.jpeg',
+  'NEW5.jpeg',
+  '370763428_179291181841969_7297484406952033363_n.jpg',
+  '373327533_185612127876541_7557161057004200453_n.jpg',
+  'image0.jpeg',
+  'image1.jpeg',
+  'image3.jpeg',
   'moving.jpg',
   'moving2.jpg',
   'moving3.jpg',
@@ -134,7 +143,7 @@ const imageFilenames1 = [
   'Image.jpeg'
 ]; // Add more filenames as needed
 
-function createSlideshow1() {
+function createSlideshow() {
   const slideshowContainer = document.getElementById('slideshow');
 
   imageFilenames.forEach((filename, index) => {
@@ -163,53 +172,7 @@ function createSlideshow1() {
   showImage(currentIndex);
 }
 
-window.onload = createSlideshow1;
-
-
-const imageFilenames2 = [
-  'NEW1.jpeg',
-  'NEW2.jpeg',
-  'NEW3.jpeg',
-  'NEW4.jpeg',
-  'NEW5.jpeg',
-  '370763428_179291181841969_7297484406952033363_n.jpg',
-  '373327533_185612127876541_7557161057004200453_n.jpg',
-  'image0.jpeg',
-  'image1.jpeg',
-  'image3.jpeg'
- 
-]; // Add more filenames as needed
-
-function createSlideshow2() {
-  const slideshowContainer = document.getElementById('slideshow');
-
-  imageFilenames2.forEach((filename, index) => {
-    const img = document.createElement('img');
-    img.src = `/Pics/${filename}`;
-    img.alt = 'Vestavia Hills Image';
-    slideshowContainer.appendChild(img);
-  });
-
-  let currentIndex = 0;
-  const images = document.querySelectorAll('#slideshow img');
-
-  function showImage(index) {
-    images.forEach((img, i) => {
-      img.classList.toggle('active', i === index);
-    });
-  }
-
-  function nextImage() {
-    showImage(currentIndex);
-    currentIndex = (currentIndex + 1) % images.length;
-  }
-
-  setInterval(nextImage, 4000);
-
-  showImage(currentIndex);
-}
-
-window.onload = createSlideshow2;
+window.onload = createSlideshow;
 
 
 
