@@ -119,6 +119,7 @@ if (document.visibilityState === "hidden") {
 }
 });
 const imageFilenames = [
+  // your image filenames here
   'NEW1.jpeg',
   'NEW2.jpeg',
   'NEW3.jpeg',
@@ -143,8 +144,8 @@ const imageFilenames = [
   'Image.jpeg'
 ]; // Add more filenames as needed
 
-function createSlideshow() {
-  const slideshowContainer = document.getElementById('slideshow');
+function createSlideshow(containerId) {
+  const slideshowContainer = document.getElementById(containerId);
 
   imageFilenames.forEach((filename, index) => {
     const img = document.createElement('img');
@@ -154,7 +155,7 @@ function createSlideshow() {
   });
 
   let currentIndex = 0;
-  const images = document.querySelectorAll('#slideshow img');
+  const images = document.querySelectorAll(`#${containerId} img`);
 
   function showImage(index) {
     images.forEach((img, i) => {
@@ -172,7 +173,11 @@ function createSlideshow() {
   showImage(currentIndex);
 }
 
-window.onload = createSlideshow;
+window.onload = function () {
+  createSlideshow('slideshow1');
+  createSlideshow('slideshow2');
+  createSlideshow('slideshow3');
+};
 
 
 
