@@ -119,6 +119,7 @@ ul{
   text-align: center;
   margin: 100px;
   border-radius: 10px;
+  padding:40px;
   
 }
 .differences-div p{
@@ -135,7 +136,7 @@ ul{
   align-items: center;
   text-align: center;
   margin: 100px;
-  padding-bottom: 15px;
+  padding:40px;
   border-radius: 10px;
 }
 
@@ -150,8 +151,7 @@ ul{
     text-align: center;
     margin: 100px;
     border-radius: 10px;
-    padding-bottom: 40px;
-    padding-top:40px ;
+   padding: 40px;
 }
 
 
@@ -712,14 +712,16 @@ img {
 /* Desktop Styles */
 @media only screen and (min-width: 768px) {
   .iframe {
-      max-width: 800px; /* Set your desired maximum width for desktop */
+      max-width: 800px;
+      margin-bottom: 50px; /* Set your desired maximum width for desktop */
   }
 }
 
 /* Phone Styles */
 @media only screen and (max-width: 767px) {
   .iframe {
-      max-width: 100%; /* Full width for phones */
+      max-width: 90%; 
+      margin-bottom: 50px;/* Full width for phones */
   }
 }
 

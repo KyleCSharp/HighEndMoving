@@ -140,7 +140,17 @@ const imageFilenames = [
   'Image (3).jpeg',
   'Image (4).jpeg',
   'Image (5).jpeg',
-  'Image.jpeg'
+  'Image.jpeg',
+  'unnamed (1).jpg',
+  'unnamed (2).jpg',
+  'unnamed (3).jpg',
+  'unnamed (4).jpg',
+  'unnamed (5).jpg',
+  'unnamed (6).jpg',
+  'unnamed (7).jpg',
+  'unnamed (8).jpg',
+  'unnamed (9).jpg'
+ 
 ]; // Add more filenames as needed
 
 function createSlideshow() {
