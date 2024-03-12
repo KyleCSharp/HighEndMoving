@@ -688,10 +688,7 @@ img {
   top: 0;
   left: 0;
 }
-.hidden-button {
-  position: absolute;
-  left: -9999px;
-}
+
 
 .media-div {
   background-color: black;
@@ -725,10 +722,10 @@ img {
   order: -1; /* Swap the order of left and right sections on mobile */
 }
 
-.left-section .sback,
 .right-section .iframe {
-  width: 500px; /* Set width to 500px */
-  height: 600px; /* Set height to 600px */
+  width: 500px; /* Set width to match slideshow */
+  height: 600px; /* Set height to match slideshow */
+  margin: 24px auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -763,3 +760,7 @@ img {
 
 
 
+.hidden-button {
+  position: absolute;
+  left: -9999px;
+}
