@@ -724,7 +724,7 @@ img {
 
 .right-section .iframe {
   width: 100%; /* Set width to fill the container */
-  height: auto; /* Allow the height to adjust proportionally */
+  height: 600px; /* Allow the height to adjust proportionally */
   max-width: 500px; /* Limit the maximum width of the video */
   margin: 24px auto;
 }
