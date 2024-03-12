@@ -753,7 +753,9 @@ img {
   }
 }
 
-
+.sback {
+  width: 100%; /* Ensure the slideshow takes full width */
+}
 
 
 
