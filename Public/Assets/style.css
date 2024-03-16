@@ -682,12 +682,12 @@ img {
 
 #slideshow img:not(.active) {
   opacity: 0;
-  transition: opacity 1s ease; /* Add transition for non-active images */
-  pointer-events: none; /* Disable pointer events for non-active images */
-  position: absolute; /* Add position absolute for non-active images */
+  /* Remove pointer-events: none; */
+  position: absolute;
   top: 0;
   left: 0;
 }
+
 
 
 .media-div {
