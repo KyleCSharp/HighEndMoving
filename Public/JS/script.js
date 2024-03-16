@@ -187,5 +187,12 @@ window.onload = createSlideshow;
 
 
 
+   // Auto-scroll function
+   function autoScroll() {
+    var iframe = document.getElementById('reviewsFrame');
+    // Scroll to the bottom of the iframe content
+    iframe.contentWindow.scrollTo(0, iframe.contentDocument.body.scrollHeight);
+}
 
-
+// Call the autoScroll function after a delay
+setTimeout(autoScroll, 1000); // Adjust the delay as needed
