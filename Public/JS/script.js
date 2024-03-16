@@ -141,7 +141,7 @@ const imageFilenames = [
   'Image (4).jpeg',
   'Image (5).jpeg',
   'Image.jpeg',
-  'MovingInside.jpg',
+  'unnamed (1).jpg',
   'unnamed (2).jpg',
   'unnamed (3).jpg',
   'unnamed (4).jpg',
